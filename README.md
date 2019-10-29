@@ -1,10 +1,22 @@
 
 utils.py
 	load_data - This function loads the test images and train images
+
+	KNN_classifier - This takes the train images, train labels, test images,
+					 and number of neighbors to perform KNN classifier using
+					 sklearn.neighbors.KNeighborsClassifier[1] and return how
+					 the test images correspond to the classifier.
 	
-	KNN_classifier - This takes the train images, train labels, test images, and number of neighbors to perform KNN classifier using sklearn.neighbors.KNeighborsClassifier[1] and return how the test images correspond to the classifier
+	SVM_classifier - This takes train images, train labels, test images, boolean,
+					and svm lambda to perform SVM classifier using sklearn.svm.SVC[2]
+					to make the classifier with the train images and train labels
+					and return how the test images correspond to the classifier. 
 	
-	SVM_classifier - This takes train images, train labels, test images, boolean, and svm lambda to perform SVM classifier using sklearn.svm.SVC[2] to make the classifier with the train images and train labels and return how the test images correspond to the classifier
+	imresize - This resizes the input image to be target_size x target_size and 
+			   return the normalized[3] image.
+
+	reportAccuracy - This returns how the predicted labels are performing with
+					 return the normalized[3] image
 
 	imresize - This resizes the input image to be target_size x target_size and return the normalized[3] image
 
